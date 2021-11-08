@@ -5,3 +5,4 @@ This is simple code for rename your directory
 just compile it with gcc, 
 
 "gcc rename.c -o rename" 
+"./rename"
