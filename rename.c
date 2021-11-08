@@ -38,6 +38,8 @@ void print_dir(char *dir, int depth, int searchSubDir)
             {
                 if ((ret = rename(entry->d_name,newName)) != 0)
                     fprintf(stderr, "Error in renaming, return code: %d", ret);
+                
+                printf("Success renaming from '%s' to : %s \n",entry->d_name, newName);
             }
 
             if(searchSubDir == 1)
@@ -58,7 +60,7 @@ int main()
     printf("Enable scan for sub directory ? (1 for yes 0 for no) \n");
     scanf("%d", &subDir);
 
-    if(strcmp("this", dir) == 0 ||strcmp("This", dir) == 0) 
+    if(strcmp("this", dir) == 0 || strcmp("This", dir) == 0) 
     {
         char cwd[PATH_MAX];
         if (getcwd(cwd, sizeof(cwd)) != NULL) {
