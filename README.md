@@ -1,7 +1,7 @@
 # About
-This is simple app for rename your dir if u are lazy person to rename it
+Script tools for changing name directory which that have many folder.  feel free to use if u are lazy person too :D
 
-# how it works
+# How it works
 just compile it with gcc, 
 
 "gcc rename.c -o rename",
